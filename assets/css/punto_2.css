@@ -1,0 +1,240 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  background: #f7f7f9;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #563d7c;
+  color: #cbbde2;
+  margin: 0;
+}
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+header nav ul {
+  list-style: style none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+}
+header nav ul li a {
+  color: #cbbde2;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+header nav ul li a:hover, header nav ul li a.active {
+  color: #fff;
+}
+
+.contenido {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contenido h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  color: blue;
+  margin-bottom: 20px;
+}
+.contenido p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 99%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col_6 {
+  padding: 25px 0 0;
+  width: 50%;
+  float: left;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #563d7c;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.form {
+  position: relative;
+  margin: 30px 30px 0px 15px;
+  padding: 10px 45px 0px 45px;
+  background: #ffffff;
+  width: 100%;
+}
+.form .form-group {
+  margin-bottom: 1rem;
+}
+.form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s;
+}
+.form input ::-moz-placeholder, .form textarea ::-moz-placeholder {
+  color: #90a4ae;
+}
+.form input ::placeholder,
+.form textarea ::placeholder {
+  color: #90a4ae;
+}
+.form .btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  background: #0069d9;
+  color: #fafafa;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.form .btn:hover {
+  background-color: #0050a6;
+}
+.form .btn.search {
+  float: right;
+  padding: 10px;
+}
+.form .message {
+  color: #90a4ae;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.form .message a {
+  text-decoration: none;
+  color: #00bfa5;
+}
+.form .error-message {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.form .invalid {
+  border: 1px solid #ff0000;
+  background-color: #ffe6e6;
+}
+
+.content-disney-list {
+  max-height: 350px;
+  overflow: auto;
+  margin-bottom: 60px;
+}
+.content-disney-list table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-disney-list th,
+.content-disney-list td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+.content-disney-list th .btn-action-info,
+.content-disney-list td .btn-action-info {
+  border: 2px solid #04AA6D;
+  background-color: white;
+  color: #04AA6D;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.content-disney-list th .btn-action-info:hover,
+.content-disney-list td .btn-action-info:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+.content-disney-list th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.content-disney-list tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+.content-disney-list tbody tr:hover {
+  background-color: #e2e6ea;
+}
+
+.disney-detail {
+  position: relative;
+  margin: 30px;
+  padding: 45px;
+  background: #ffffff;
+  max-height: 350px;
+  overflow: auto;
+}
+
+.content-img {
+  background-color: #fff;
+  height: 80px; /* Can be anything */
+  width: 80px; /* Can be anything */
+  position: relative;
+}
+.content-img img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.nombres {
+  font-weight: bold;
+}/*# sourceMappingURL=punto_2.css.map */

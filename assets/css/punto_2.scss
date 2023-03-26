@@ -1,0 +1,121 @@
+@import "./main.scss";
+
+.form {
+    position: relative;
+    margin: 30px 30px 0px 15px;
+    padding: 10px 45px 0px 45px;
+    background: #ffffff;
+    width: 100%;
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    input,
+    textarea {
+        @include input;
+
+        ::placeholder {
+            color: #90a4ae;
+        }
+    }
+
+    .btn {
+        @include btn;
+        &.search {
+            float: right;
+            padding: 10px
+        }
+    }
+
+    .message {
+        @include message;
+        a {
+            text-decoration: none;
+            color: #00bfa5;
+        }
+    }
+
+    .error-message {
+        color: $error-color;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .invalid {
+        border: 1px solid $error-color;
+        background-color: lighten($error-color, 45%);
+    }
+}
+
+.content-disney-list {
+    max-height: 350px;
+    overflow: auto;
+    margin-bottom: 60px;
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    th,
+    td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid $border-table;
+        .btn-action-info {
+            @include btnAction($success-color);
+        }
+    }
+
+    th {
+        vertical-align: bottom;
+        border-bottom: 2px solid $border-table;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tbody tr:hover {
+        background-color: #e2e6ea;
+    }
+}
+
+.disney-detail {
+    position: relative;
+    margin: 30px;
+    padding: 45px;
+    background: #ffffff;
+    max-height: 350px;
+    overflow: auto;
+}
+
+.content-img {
+    background-color: #fff;
+    height: 80px; /* Can be anything */
+    width: 80px; /* Can be anything */
+    position: relative;
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+    }
+}
+.nombres {
+    font-weight: bold;
+}
