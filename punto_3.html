@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Taller semana 1 y 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/punto_3.css">
+    <script src="https://kit.fontawesome.com/dd44c99b63.js" crossorigin></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="#">TALLER 1</a></li>
+                <li><a href="./index.html">punto 1</a></li>
+                <li><a href="./punto_2.html">punto 2</a></li>
+                <li><a class="active" href="./punto_3.html">punto 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contenido">
+        <h1>PUNTO 3</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col_6">
+                    <h1>Crear Comentario</h1>
+                    <div class="form">
+                        <form action="#" class="login-form" id="form-comentarios">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Nombres</label>
+                                <input type="text" name="nombre" placeholder="" id="comentarios-nombre">
+                                <span id="comentarios-nombre-error" class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Comentario</label>
+                                <textarea name="comentario" placeholder="" id="comentarios-comentario"></textarea>
+                                <span id="comentarios-comentario-error" class="error-message"></span>
+                            </div>
+                            <input type="hidden" name="id" value="" id="comentarios-id" />
+                            <button type="submit" class="btn">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col_6">
+                    <div class="list-comments">
+                        <h1>Comentarios</h1>
+                        <div id="content-comment-list" class="content-comment-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Frontend Grupo 2 - Powered By : Dayron Garzon Romano  &copy; 2023</p>
+    </footer>
+    <script src="./assets/js/classComentarios.js"></script>
+    <script src="./assets/js/punto_3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+@import "./reset.css";
+@import "./mixins.scss";
+@import "./functions.scss";
+@import "./vars.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+//Estilos
+body {
+    background: $background-color;
+    font-family: $font-family;
+    color: $texto;
+}
+
+header {
+    background-color: $color-main;
+    color: $menu-inactive;
+    margin: 0;
+
+    h1 {
+        @include texto("grande", #fff);
+        text-align: center;
+        padding: 1em;
+    }
+
+    nav {
+        ul {
+            list-style: style none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin: 10px;
+                padding: 20px;
+
+                a {
+                    color: $menu-inactive;
+                    text-decoration: none;
+                    padding: 0.5em 1em;
+
+                    &:hover,
+                    &.active {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contenido {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+    h2 {
+        @include texto("mediano", blue);
+        margin-bottom: 20px;
+    }
+
+    p {
+        @include texto("pequeño", #333);
+    }
+
+}
+
+.container {
+    width: 100%;
+    max-width: 99%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col_6 {
+    padding: 25px 0 0;
+    width: 50%;
+    float: left;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-main;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}

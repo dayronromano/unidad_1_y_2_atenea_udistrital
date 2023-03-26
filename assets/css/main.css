@@ -1,0 +1,88 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  background: #f7f7f9;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #563d7c;
+  color: #cbbde2;
+  margin: 0;
+}
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+header nav ul {
+  list-style: style none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+}
+header nav ul li a {
+  color: #cbbde2;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+header nav ul li a:hover, header nav ul li a.active {
+  color: #fff;
+}
+
+.contenido {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contenido h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  color: blue;
+  margin-bottom: 20px;
+}
+.contenido p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 99%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col_6 {
+  padding: 25px 0 0;
+  width: 50%;
+  float: left;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #563d7c;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}/*# sourceMappingURL=main.css.map */

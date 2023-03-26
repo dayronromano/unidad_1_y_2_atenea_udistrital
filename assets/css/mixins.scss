@@ -1,0 +1,58 @@
+@import "./functions.scss";
+//Mixins
+@mixin btn($fontcolor: #fafafa) {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    background: #0069d9;
+    color: $fontcolor;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    &:hover{
+        background-color: oscurecer(#0069d9, 10%);
+    }
+}
+
+@mixin btnAction($color: black) {
+    border: 2px solid $color;
+    background-color: white;
+    color: $color;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    &:hover{
+        background-color: $color;
+        color: white;
+    }
+}
+
+@mixin message($fontcolor: #90a4ae) {
+    color: $fontcolor;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+@mixin input($bkgnd: #f5f5f5) {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s
+}
+
+@mixin texto($tamano, $color) {
+    font-family: $font-family;
+    font-size: tamanoTexto($tamano);
+    color: $color;
+}

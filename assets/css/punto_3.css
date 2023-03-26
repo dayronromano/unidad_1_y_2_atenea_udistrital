@@ -1,0 +1,226 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  background: #f7f7f9;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #563d7c;
+  color: #cbbde2;
+  margin: 0;
+}
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+header nav ul {
+  list-style: style none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+}
+header nav ul li a {
+  color: #cbbde2;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+header nav ul li a:hover, header nav ul li a.active {
+  color: #fff;
+}
+
+.contenido {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contenido h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  color: blue;
+  margin-bottom: 20px;
+}
+.contenido p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 99%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col_6 {
+  padding: 25px 0 0;
+  width: 50%;
+  float: left;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #563d7c;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.form {
+  position: relative;
+  margin: 30px;
+  padding: 45px;
+  background: #ffffff;
+}
+.form .form-group {
+  margin-bottom: 1rem;
+}
+.form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s;
+}
+.form input ::-moz-placeholder, .form textarea ::-moz-placeholder {
+  color: #90a4ae;
+}
+.form input ::placeholder,
+.form textarea ::placeholder {
+  color: #90a4ae;
+}
+.form .btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  background: #0069d9;
+  color: #fafafa;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.form .btn:hover {
+  background-color: #0050a6;
+}
+.form .message {
+  color: #90a4ae;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.form .message a {
+  text-decoration: none;
+  color: #00bfa5;
+}
+.form .error-message {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.form .invalid {
+  border: 1px solid #ff0000;
+  background-color: #ffe6e6;
+}
+
+.content-comment-list {
+  margin-top: 30px;
+  max-height: 400px;
+  overflow: auto;
+}
+.content-comment-list table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-comment-list th,
+.content-comment-list td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+.content-comment-list th .content-coment .nombres,
+.content-comment-list td .content-coment .nombres {
+  font-weight: bold;
+}
+.content-comment-list th .content-coment .fecha,
+.content-comment-list td .content-coment .fecha {
+  font-weight: bold;
+  font-size: 11px;
+}
+.content-comment-list th .btn-action-update,
+.content-comment-list td .btn-action-update {
+  border: 2px solid #04AA6D;
+  background-color: white;
+  color: #04AA6D;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.content-comment-list th .btn-action-update:hover,
+.content-comment-list td .btn-action-update:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+.content-comment-list th .btn-action-delete,
+.content-comment-list td .btn-action-delete {
+  border: 2px solid #ff0000;
+  background-color: white;
+  color: #ff0000;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.content-comment-list th .btn-action-delete:hover,
+.content-comment-list td .btn-action-delete:hover {
+  background-color: #ff0000;
+  color: white;
+}
+.content-comment-list th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.content-comment-list tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+.content-comment-list tbody tr:hover {
+  background-color: #e2e6ea;
+}/*# sourceMappingURL=punto_3.css.map */

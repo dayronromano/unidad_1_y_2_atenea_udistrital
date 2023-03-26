@@ -1,0 +1,97 @@
+@import "./main.scss";
+
+.form {
+    position: relative;
+    margin: 30px;
+    padding: 45px;
+    background: #ffffff;
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    input,
+    textarea {
+        @include input;
+
+        ::placeholder {
+            color: #90a4ae;
+        }
+    }
+
+    .btn {
+        @include btn;
+    }
+
+    .message {
+        @include message;
+        a {
+            text-decoration: none;
+            color: #00bfa5;
+        }
+    }
+
+    .error-message {
+        color: $error-color;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .invalid {
+        border: 1px solid $error-color;
+        background-color: lighten($error-color, 45%);
+    }
+}
+
+.content-comment-list {
+    margin-top: 30px;
+    max-height: 400px;
+    overflow: auto;
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    }
+
+    th,
+    td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid $border-table;
+        .content-coment{
+            .nombres{
+                font-weight: bold;
+            }
+            .fecha{
+                font-weight: bold;
+                font-size: 11px;
+            }
+        }
+        .btn-action-update{
+            @include btnAction($success-color);
+        }
+        .btn-action-delete{
+            @include btnAction($error-color);
+        }
+    }
+
+    th {
+        vertical-align: bottom;
+        border-bottom: 2px solid $border-table;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tbody tr:hover {
+        background-color: #e2e6ea;
+    }
+}
